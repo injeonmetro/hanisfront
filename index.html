@@ -28,16 +28,16 @@
 <div class="bg-white rounded shadow-lg py-5 px-7">
 <nav class="flex justify-between">
 <div class="flex items-center space-x-3 lg:pr-16 pr-6">
-<a href="/">
+<a href="javascript:openView('WelcomePage');">
 
 <img src="https://media.discordapp.net/attachments/971031340105478195/978299099264712794/ec3aa3d3653f9e8f.png" class="h-8">
 </a>
 </div>
 <ul class="hidden md:flex flex-auto space-x-2">
-<a href="#"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">운임안내</li></a>
+<a href="javascript:openView('chargeView');"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">운임안내</li></a>
 
 <a href="#"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">사이버스테이션</li></a>
-<a href="#"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">회사소개</li></a>
+<a href="javascript:openView('corpIntro');"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">회사소개</li></a>
 </ul>
 <div class=" flex space-x-5 justify-center items-center pl-2">
 <div class="relative cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 ">
@@ -49,6 +49,8 @@
 
 </div>
 </div>
+<!--시작page-->
+<div id="WelcomePage" style="display: none;">
 <div style="background: url(https://media.discordapp.net/attachments/971031340105478195/978310268939550791/main_visual_01.png?width=1440&amp;height=595) center center no-repeat; background-size: cover;">
 <div class="">
 <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
@@ -149,11 +151,247 @@
 </div>
 </div>
 </section>
+</div>
 
+<!--공사소개-->
+<div id="corpIntro" style="display: none;">
+<div class="mb-16 bg-blue-500 text-center" style="background: url(https://i.ytimg.com/vi/W2FQHNA0Sr8/maxresdefault.jpg) center center no-repeat; background-size: cover;">
+<div class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+<div class="w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+<p style="text-shadow: 5px 5px 10px black;" class="mt-2 text-5xl font-bold text-white text-center">회사소개</p>
+<p style="text-shadow: 5px 5px 10px black;" class="text-xl text-white text-center mt-2">메인 - 회사소개</p>
+</div>
+</div>
+</div>
+<article class="py-12 px-4">
+<h1 class="text-4xl text-center mb-4 font-semibold font-heading font-semibold">회사소개</h1>
+<br>
+<div class="w-3/4 mx-auto">
+    <img src="https://yt3.ggpht.com/DPk3ChI4avlbIcQw4F7MnPVXi-6ozaiFhC5_nB2gh88V3LKCwVlJLM-WHzM1CEMSbqCUgsf8l_E=s900-c-k-c0x00ffffff-no-rj" alt="ddddDJET" class="h-32">
+<h2 class="text-blue-600 text-2xl font-bold">고객여러분 안녕하십니까?</h2>
+<p>(주)한인승 대표, 한인승 입니다.<br>
+우리 회사는 2022년 5월 23일 부로 출범하였습니다.
+<br><br>
+대전의 2번째 도시철도를 운영하게 되어서, 대단히 기쁩니다.
+<br><br>
+대전의 2번째 도시철도를 세계에서 가장 안전하고, 편리하게 이용하실 수 있도록, 저희 임직원이 최선을 다하겠습니다.
+<br><br>
+항상 모든 고객을 가족처럼 생각하며, 모든 고객께 최선을 다해 좋은 서비스를 제공 하겠습니다.
+<br><br>
+앞으로도 우리 회사에 많은 관심 부탁드립니다.<br>
+고맙습니다.
+    <img src="https://images-ext-1.discordapp.net/external/y98TvwCpN_H9jgPUbbn_oRO0g_9-wNPe2gDcMn3zoSs/https/media.discordapp.net/attachments/905001858618232832/957449983324467230/746ae5aec9065550.png" alt="한인승" class="h-12">
+</p>
+</div>
+</article>
+</div>
 
+<!--운임-->
+<div id="chargeView" style="display:none;">
+    <div class="mb-16 bg-blue-500 text-center" style="background: url(https://i.ytimg.com/vi/W2FQHNA0Sr8/maxresdefault.jpg) center center no-repeat; background-size: cover;">
+<div class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+<div class="w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+<p style="text-shadow: 5px 5px 10px black;" class="mt-2 text-5xl font-bold text-white text-center">운임안내</p>
+<p style="text-shadow: 5px 5px 10px black;" class="text-xl text-white text-center mt-2">메인 - 운임안내</p>
+</div>
+</div>
+</div>
+    <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20">
+<div class="container">
+<div class="flex flex-wrap justify-center -mx-4">
+<div class="w-full px-4">
+<div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+<h2 class="
+                  font-bold
+                  text-3xl
+                  sm:text-4xl
+                  md:text-[40px]
+                  text-dark
+                  mb-4
+                  ">운임안내
+</h2>
+<p class="text-base text-body-color">정당 승차권! 나의 당당함입니다.
+</p>
+</div>
+</div>
+</div>
+<section class="bg-white dark:bg-gray-800">
+        <div class="container px-6 py-8 mx-auto">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/q36qlc1wFXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="w-auto"></iframe>
+            </div>
 
+            <div class="grid gap-6 mt-16 -mx-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div class="px-6 py-4 transition-colors duration-200 transform rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <p class="text-lg font-medium text-gray-800 dark:text-gray-100">IJX</p>
+                    <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">142,000원~</h4>
+                    <p class="mt-4 text-gray-500 dark:text-gray-300">빠르고 편안한 고속철도</p>
 
+                    <div class="mt-8 space-y-8">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
 
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">기본운임 (1개 구간) - 142,000원 (특실: 168,000원)</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">2개 구간 - 192,000원 (특실: 268,000원)</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">3개 구간 - 242,000원 (특실: 338,800원)</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">전구간 - 292,000원 (특실: 408,800원)</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">입석시 5% 할인, 침대실 이용시 일반실 60% 할증</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="px-6 py-4 transition-colors duration-200 transform rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <p class="text-lg font-medium text-gray-800 dark:text-gray-100">인전광역철도 (비수도권)</p>
+                    <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">3000원~</h4>
+                    
+
+                    <div class="mt-8 space-y-8">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">10km 초과 후 2.5km마다 750원</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">50km 초과 후 4km마다 1000원</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">판암~천안아산</span>
+                        </div>
+
+                        
+
+                        
+                    </div>
+
+                    
+                </div>
+
+                
+
+                <div class="px-6 py-4 transition-colors duration-200 transform rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <p class="text-lg font-medium text-gray-800 dark:text-gray-100">인전광역철도 (수도권)</p>
+                    <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">1250원~</h4>
+                    
+
+                    <div class="mt-8 space-y-8">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">10km 초과 후 5km마다 100원</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">50km 초과 후 8km마다 100원</span>
+                        </div>
+
+                        
+
+                        
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+
+                            <span class="mx-4 text-gray-700 dark:text-gray-300">천안아산~김포공항</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</section>
+</div>
+
+<!-- 404 에러-->
+<div id="404Err" style="display: none;">
+<div class="relative bg-gray-100 overflow-hidden">
+  <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
+      <div class="sm:max-w-lg">
+        <h1 class="text-4xl font tracking-tight text-gray-900 sm:text-6xl">404</h1>
+        <p class="mt-4 text-xl text-gray-900">페이지를 찾을 수 없습니다.</p>
+        <div class="inline-block">
+          <a href="javascript:openView('WelcomePage');" class="transition ease-in-out bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300 flex text-center bg-blue-500 border border-transparent rounded-full py-2 px-4 text-xl text-white hover:bg-indigo-700">
+<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+</svg>
+메인 페이지로</a>
+</div>
+      </div>
+        </div>
+      </div>
+
+</div>
+</div>
+
+<!-- init-->
+<div id="loading">
+<div class="relative bg-gray-100 overflow-hidden">
+  <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
+      <div class="sm:max-w-lg">
+        <h1 class="text-4xl font tracking-tight text-gray-900 sm:text-6xl">Loading...</h1>
+        <p class="mt-4 text-xl text-gray-900">페이지가 로딩되지 않는 경우, Javascript를 활성화해보세요.</p>
+      </div>
+        </div>
+      </div>
+
+</div>
+</div>
 
 
 <div class="mb-16">
@@ -194,7 +432,7 @@
 </footer>
 </div>
 <nav class="visible md:invisible fixed bottom-0 w-full border bg-white flex overflow-x-auto">
-<a href="#" class="flex flex-col flex-grow items-center justify-center
+<a href="javascript:openView('chargeView');" class="flex flex-col flex-grow items-center justify-center
 		overflow-hidden whitespace-no-wrap text-sm transition-colors duration-100
 		ease-in-out hover:bg-gray-200 focus:text-orange-500">
 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -211,15 +449,45 @@
 </svg>
 <span class="text-sm capitalize">사이버스테이션</span>
 </a>
-<a href="#" class="flex flex-col flex-grow items-center justify-center
+<a href="javascript:openView('corpIntro');" class="flex flex-col flex-grow items-center justify-center
 		overflow-hidden whitespace-no-wrap text-sm transition-colors duration-100
 		ease-in-out hover:bg-gray-200 focus:text-orange-500">
 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
 <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
 </svg>
-<span class="text-sm capitalize">공사소개</span>
+<span class="text-sm capitalize">회사소개</span>
 </a>
 </nav>
+    <script>
+        var currentViewPage = "WelcomePage";
+        document.getElementById('loading').style.display = 'none';
 
+        if (window.location.hash != ""){
+        if (document.getElementById(window.location.hash)){
+            openView(window.location.hash);
+        }
+        else{
+            openView('404Err');
+        }
+        }
+
+        if (window.location.pathname != "/"){
+        if (document.getElementById(window.location.pathname.replace("/", ""))){
+            openView(window.location.pathname.replace("/", ""));
+        }
+        else{
+            openView('404Err');
+        }
+        }
+
+        function openView(page){
+         document.getElementById(currentViewPage).style.display = 'none';
+         document.getElementById(page).style.display = '';
+         currentViewPage = page;
+         window.history.replaceState("object or string", page+" - (주)한인승", "/"+page);
+        }
+
+
+    </script>
 
 </body></html>
