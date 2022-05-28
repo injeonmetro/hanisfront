@@ -50,7 +50,7 @@
 </div>
 </div>
 <!--시작page-->
-<div id="index" style="display: none;">
+<div id="index">
 <div style="background: url(https://media.discordapp.net/attachments/971031340105478195/978310268939550791/main_visual_01.png?width=1440&amp;height=595) center center no-repeat; background-size: cover;">
 <div class="">
 <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
@@ -365,7 +365,7 @@
         <h1 class="text-4xl font tracking-tight text-gray-900 sm:text-6xl">404</h1>
         <p class="mt-4 text-xl text-gray-900">페이지를 찾을 수 없습니다.</p>
         <div class="inline-block">
-          <a href="javascript:openView('WelcomePage');" class="transition ease-in-out bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300 flex text-center bg-blue-500 border border-transparent rounded-full py-2 px-4 text-xl text-white hover:bg-indigo-700">
+          <a href="javascript:openView('index');" class="transition ease-in-out bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300 flex text-center bg-blue-500 border border-transparent rounded-full py-2 px-4 text-xl text-white hover:bg-indigo-700">
 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
 </svg>
@@ -461,8 +461,6 @@
     <script>
         var currentViewPage = "index";
         document.getElementById('loading').style.display = 'none';
-        document.getElementById(currentViewPage).style.display = '';
-	    
         if (window.location.hash != ""){
         if (document.getElementById(window.location.hash)){
             openView(window.location.hash);
