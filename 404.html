@@ -28,16 +28,16 @@
 <div class="bg-white rounded shadow-lg py-5 px-7">
 <nav class="flex justify-between">
 <div class="flex items-center space-x-3 lg:pr-16 pr-6">
-<a href="javascript:openView('WelcomePage');">
+<a href="javascript:openView('index');">
 
 <img src="https://media.discordapp.net/attachments/971031340105478195/978299099264712794/ec3aa3d3653f9e8f.png" class="h-8">
 </a>
 </div>
 <ul class="hidden md:flex flex-auto space-x-2">
-<a href="javascript:openView('chargeView');"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">운임안내</li></a>
+<a href="javascript:openView('charge');"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">운임안내</li></a>
 
 <a href="#"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">사이버스테이션</li></a>
-<a href="javascript:openView('corpIntro');"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">회사소개</li></a>
+<a href="javascript:openView('intro');"><li class="text-gray-700 cursor-pointer px-3 py-2.5 font-normal text-xl leading-3">회사소개</li></a>
 </ul>
 <div class=" flex space-x-5 justify-center items-center pl-2">
 <div class="relative cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 ">
@@ -50,7 +50,7 @@
 </div>
 </div>
 <!--시작page-->
-<div id="WelcomePage" style="display: none;">
+<div id="index" style="display: none;">
 <div style="background: url(https://media.discordapp.net/attachments/971031340105478195/978310268939550791/main_visual_01.png?width=1440&amp;height=595) center center no-repeat; background-size: cover;">
 <div class="">
 <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
@@ -154,7 +154,7 @@
 </div>
 
 <!--공사소개-->
-<div id="corpIntro" style="display: none;">
+<div id="intro" style="display: none;">
 <div class="mb-16 bg-blue-500 text-center" style="background: url(https://i.ytimg.com/vi/W2FQHNA0Sr8/maxresdefault.jpg) center center no-repeat; background-size: cover;">
 <div class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
 <div class="w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -187,7 +187,7 @@
 </div>
 
 <!--운임-->
-<div id="chargeView" style="display:none;">
+<div id="charge" style="display:none;">
     <div class="mb-16 bg-blue-500 text-center" style="background: url(https://i.ytimg.com/vi/W2FQHNA0Sr8/maxresdefault.jpg) center center no-repeat; background-size: cover;">
 <div class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
 <div class="w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -432,7 +432,7 @@
 </footer>
 </div>
 <nav class="visible md:invisible fixed bottom-0 w-full border bg-white flex overflow-x-auto">
-<a href="javascript:openView('chargeView');" class="flex flex-col flex-grow items-center justify-center
+<a href="javascript:openView('charge');" class="flex flex-col flex-grow items-center justify-center
 		overflow-hidden whitespace-no-wrap text-sm transition-colors duration-100
 		ease-in-out hover:bg-gray-200 focus:text-orange-500">
 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -449,7 +449,7 @@
 </svg>
 <span class="text-sm capitalize">사이버스테이션</span>
 </a>
-<a href="javascript:openView('corpIntro');" class="flex flex-col flex-grow items-center justify-center
+<a href="javascript:openView('intro');" class="flex flex-col flex-grow items-center justify-center
 		overflow-hidden whitespace-no-wrap text-sm transition-colors duration-100
 		ease-in-out hover:bg-gray-200 focus:text-orange-500">
 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -459,9 +459,10 @@
 </a>
 </nav>
     <script>
-        var currentViewPage = "WelcomePage";
+        var currentViewPage = "index";
         document.getElementById('loading').style.display = 'none';
-
+        document.getElementById(currentViewPage).style.display = '';
+	    
         if (window.location.hash != ""){
         if (document.getElementById(window.location.hash)){
             openView(window.location.hash);
