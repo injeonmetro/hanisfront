@@ -30,6 +30,7 @@
 <a class="px-4 py-1 mt-1.5 text-black" href="https://www.youtube.com/channel/UCaut0jW1s4rEqYK370v14Fw">dDJET 유튜브</a>
 </nav>
 </div>
+	</div>
 <div class="bg-white rounded shadow-lg py-5 px-7">
 <nav class="flex justify-between">
 <div class="flex items-center space-x-3 lg:pr-16 pr-6">
@@ -363,24 +364,31 @@
 
 <!-- 404 에러-->
 <div id="404Err" style="display: none;">
-<div class="relative bg-gray-100 overflow-hidden">
-  <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
-      <div class="sm:max-w-lg">
-        <h1 class="text-4xl font tracking-tight text-gray-900 sm:text-6xl">404</h1>
-        <p class="mt-4 text-xl text-gray-900">페이지를 찾을 수 없습니다.</p>
-        <div class="inline-block">
-          <a href="javascript:openView('index');" class="transition ease-in-out bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300 flex text-center bg-blue-500 border border-transparent rounded-full py-2 px-4 text-xl text-white hover:bg-indigo-700">
-<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-</svg>
-메인 페이지로</a>
-</div>
-      </div>
-        </div>
-      </div>
+	<div class="flex items-center justify-center min-h-screen bg-white py-48">
+    <div class="flex flex-col">
+        <!-- Notes -->
+        <!-- Error Container -->
+        <div class="flex flex-col items-center">
+            <svg class="text-red-500 w-32 h-32 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
 
-</div>
+            <div class="text-red-500 font-bold text-7xl">
+                404
+            </div>
+
+            <div class="font-bold text-3xl xl:text-7xl lg:text-6xl md:text-5xl mt-10">
+                찾을 수 없는 페이지
+            </div>
+
+            <div class="text-gray-400 font-medium text-sm md:text-xl lg:text-2xl mt-8">
+                찾으시는 페이지가 존재하지 않습니다.
+            </div>
+        </div>
+<a href="javascript:openView('index');" class="mt-16 w-2/3 bg-blue-500 text-white text-center rounded-lg shadow-lg m-auto py-2 text-xl font-bold">
+홈으로
+</a>
+ 
+        </div>
+    </div>
 </div>
 
 <!-- init-->
